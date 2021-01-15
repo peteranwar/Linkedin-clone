@@ -1,0 +1,68 @@
+.widgets-container {
+  position: sticky;
+  top: 80px;
+  flex: 0.2;
+  background-color: #fff;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  height: fit-content;
+  padding: 10px;
+  margin-right: 10px;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h2 {
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+
+  .courses {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+    h4 {
+      font-size: 14px;
+    }
+    p {
+      font-size: 13px;
+      color: gray;
+    }
+    .icon {
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+
+    &:hover {
+      transition: all 0.4s ease-in-out;
+
+      background-color: whitesmoke;
+      border-radius: 10px;
+    }
+    &:hover .icon {
+      opacity: 1;
+    }
+  }
+  .show-more {
+    cursor: pointer;
+    font-size: 15px;
+    color: gray;
+    font-weight: 600;
+    padding: 8px;
+
+
+    .icon {
+      position: absolute;
+    }
+    &:hover {
+      transition: all 0.4s ease-in-out;
+      background-color: whitesmoke;
+      border-radius: 10px;
+    }
+  }
+}

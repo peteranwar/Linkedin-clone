@@ -1,0 +1,85 @@
+.sidebar-container {
+  margin: 1rem 0.7rem;
+  position: sticky;
+  top: 80px;
+  flex: 0.2;
+  border-radius: 10px;
+  text-align: center;
+  height: fit-content;
+
+  .sidebar-top {
+    border: 1px solid lightgray;
+    border-bottom: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    h5 {
+      color: gray;
+      font-size: 12px;
+    }
+
+    img {
+      width: 100%;
+      margin-bottom: -22px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      object-fit: cover;
+    }
+    .avatar {
+      margin-bottom: 10px;
+      margin: auto;
+    }
+  }
+
+  .sidebar-stats {
+    padding: 1rem 0.7rem;
+    border: 1px solid lightgray;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    .stat {
+      margin-top: 0.8rem;
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        font-size: 13px;
+        color: gray;
+        font-weight: 600;
+      }
+      .statNumber {
+        font-weight: bold;
+        color: #0f69c3;
+      }
+    }
+  }
+
+  .sidebar-bottom {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+
+    .recentItem {
+      display: flex;
+      font-size: 14px;
+      color: gray;
+      font-weight: bold;
+      padding: 10px;
+      cursor: pointer;
+      transition: all 0.4s ease-in-out;
+
+      .hash {
+        margin: 0 7px;
+      }
+      &:hover {
+        background-color: whitesmoke;
+        border-radius: 10px;
+        color: black;
+      }
+    }
+  }
+}

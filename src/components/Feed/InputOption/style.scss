@@ -1,0 +1,17 @@
+.inputOptions {
+    display: flex;
+    align-items: center;
+    color: gray;
+    padding: 6px 8px;
+    cursor: pointer;
+    transition: all .4s ease-in-out; 
+
+    &:hover{
+         background-color: lightgray;
+         border-radius: 10px;
+    }
+
+    h5 {
+      margin-left: 5px;
+    }
+  }
